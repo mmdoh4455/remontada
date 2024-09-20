@@ -28,12 +28,21 @@
             margin: 20px;
             margin-top: -30px;
         }
-     .iphone-mockup {
+
+        /* حجم الخط للعناوين والنصوص */
+        h1 {
+            font-size: 24px; /* حجم أصغر للعنوان */
+        }
+
+        p {
+            font-size: 16px; /* حجم أصغر للنص */
+        }
+
+        .iphone-mockup {
             width: 150px;
             height: auto;
             margin-top: 20px;
             animation: move 5s infinite alternate;
-           
         }
         .buttons {
             display: flex;
@@ -55,9 +64,28 @@
         .buttons a:hover img {
             transform: scale(1.1);
         }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+
         @media (max-width: 600px) {
             .buttons img {
                 width: 100px;
+            }
+            .social-icons img {
+                width: 30px;
             }
         }
        
@@ -72,10 +100,8 @@
         <h1>اللعب صار أسهل مع ريمونتادا</h1>
         <p>سواء عندك فريق أو ما عندك، سجل في المباراة اللي تناسبك، وحياك في الملعب تحت إدارة أحد المنظمين في تطبيق ريمونتادا</p>
     </div>
-</div>
-<img src="iphone-mockup.png" alt="iPhone Mockup" class="iphone-mockup">
-</body>
-</html>
+    <img src="iphone-mockup.png" alt="iPhone Mockup" class="iphone-mockup">
+    
     <div class="buttons">
         <a href="https://apps.apple.com/app/id6550914902" target="_blank">
             <img src="Apple-Store.png" alt="Apple Store">
@@ -83,4 +109,20 @@
         <a href="https://play.google.com/store/apps/details?id=com.masader.remontada&pcampaignid=web_share" target="_blank">
             <img src="Google-Play.png" alt="Google Play">
         </a>
+    </div>
 
+    <!-- إضافة رموز التواصل الاجتماعي -->
+    <div class="social-icons">
+        <a href="https://www.tiktok.com/@appremontada?_t=8pqpwflizx4&_r=1" target="_blank">
+            <img src="tiktok-icon.png" alt="TikTok">
+        </a>
+        <a href="https://www.snapchat.com/t/tJJ8FSWX" target="_blank">
+            <img src="snapchat-icon.png" alt="Snapchat">
+        </a>
+        <a href="https://x.com/appremontada?s=21" target="_blank">
+            <img src="twitter-icon.png" alt="Twitter">
+        </a>
+    </div>
+    
+</body>
+</html>
